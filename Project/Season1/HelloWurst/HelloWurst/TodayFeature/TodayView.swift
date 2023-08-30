@@ -4,9 +4,6 @@ struct TodayView: View {
   @Environment(AppCoreFeatureModel.self)
   private var model
   
-  @Environment(\.accessibilityVoiceOverEnabled)
-  private var voiceOverEnabled: Bool
-  
   @State
   var scrolledRecipe: Recipe.ID?
   
@@ -26,23 +23,15 @@ struct TodayView: View {
                   .padding(.horizontal)
                   .background(.black.opacity(0.5))
                   .padding(.bottom, 80)
-                  .accessibilityHidden(true)
               }
               .background(
-                Image(decorative: recipe.image)
+                Image(recipe.image)
                   .resizable()
                   .scaledToFill()
               )
               .clipped()
               .containerRelativeFrame(.horizontal)
               .containerRelativeFrame(.vertical)
-              .accessibilityRepresentation {
-                Summary(recipe: recipe)
-              }
-              .accessibilityAction(named: "Love") { print("Love") }
-              .accessibilityAction(named: "Notes") { print("Notes") }
-              .accessibilityAction(named: "Share") { print("Share") }
-              .hoverEffect()
             }
           }
         }
@@ -77,16 +66,13 @@ struct Summary: View {
       HStack(alignment: .bottom) {
         let cookingTime = recipe.time.formatted(.units(allowed: [.minutes], width: .abbreviated))
         Label(cookingTime, systemImage: "timer")
-          .accessibilityLabel("Cooking time \(cookingTime)")
         
         Spacer()
         
         Image(systemName: recipe.diet.systemImage)
           .font(.title)
           .opacity(0.5)
-          .accessibilityLabel("Diet: \(recipe.diet.rawValue)")
-          .accessibilitySortPriority(-1)
-        
+
         Divider().overlay(.white).frame(maxHeight: 55)
         
         VStack(alignment: .leading) {
@@ -95,13 +81,11 @@ struct Summary: View {
             systemImage: "person.2"
           )
           .font(.caption)
-          .accessibilityHidden(true)
           .foregroundColor(.accentColor)
           .background(.clear)
           
           Text(price)
             .font(.title)
-            .accessibilityLabel("Estimated cost \(price) for \(preferences.servings) persons")
         }
       }
     }

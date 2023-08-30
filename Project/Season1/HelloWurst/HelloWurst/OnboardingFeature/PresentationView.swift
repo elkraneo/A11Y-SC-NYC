@@ -4,9 +4,6 @@ struct PresentationView: View {
   @Environment(OnboardingFeatureModel.self)
   private var model
   
-  @Environment(\.accessibilityVoiceOverEnabled)
-  private var voiceOverEnabled: Bool
-  
   private let timer = Timer.publish(every: 5, tolerance: 0.5, on: .main, in: .common).autoconnect()
   
   var body: some View {
@@ -41,22 +38,6 @@ struct PresentationView: View {
       .tabItem { Text("Find") }
       .tag(2)
     }
-    .accessibilityRepresentation {
-      Text(
-          """
-          Hello Würst! Quick & healthy recipes incoming!
-          Discover new recipes everyday — for free!
-          
-          Get personalized recipes
-          Choose between 9 different diets & leave out ingredients you don't eat.
-          
-          Find recipes based on ingredients
-          Use up leftover ingredients with our `Fridge Finds` feature
-          """
-      )
-      .accessibilityAddTraits(.isHeader)
-      .accessibilitySortPriority(1)
-    }
     .tabViewStyle(.page(indexDisplayMode: .never))
     .animation(.default, value: model.currentSlide)
     .overlay(alignment: .bottom) {
@@ -71,7 +52,6 @@ struct PresentationView: View {
         )
         .buttonStyle(.borderedProminent)
         .controlSize(.extraLarge)
-        .accessibilitySortPriority(0)
         
         Text(
           """
@@ -90,11 +70,6 @@ struct PresentationView: View {
       model.nextSlide()
     }
     .gesture(swipeToStopTimer)
-    .task {
-      if voiceOverEnabled {
-        timer.upstream.connect().cancel()
-      }
-    }
   }
 }
 

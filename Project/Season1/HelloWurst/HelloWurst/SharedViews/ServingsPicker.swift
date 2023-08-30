@@ -47,11 +47,6 @@ struct ServingsPicker: View {
     .padding(8)
     .background { shape.fill(Color.primary).colorInvert() }
     .overlay { shape.stroke(.secondary) }
-    .accessibilityRepresentation {
-      Stepper(value: $preferences.servings, in: 1...12) {
-        Text("Servings".uppercased())
-      }
-    }
   }
 }
 

@@ -18,7 +18,6 @@ struct ServingsCounter: View {
         VStack {
           Spacer()
             .frame(width: .zero, height: 0)
-            .accessibilityLabel("Step 3 of 4")
           
           Text("How many servings do you usually cook?")
             .font(.system(.title, design: .serif))
@@ -31,8 +30,6 @@ struct ServingsCounter: View {
         .foregroundStyle(.primary)
         .padding(.bottom, 30)
         .multilineTextAlignment(.center)
-        .accessibilityAddTraits(.isHeader)
-        .accessibilityElement(children: .combine)
       }
     }
     .listStyle(.plain)

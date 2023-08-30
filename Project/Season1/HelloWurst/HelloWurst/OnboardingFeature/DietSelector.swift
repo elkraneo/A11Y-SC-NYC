@@ -27,15 +27,11 @@ struct DietSelector: View {
           .listItemTint(isSelected ? Color.primary : .accentColor)
           .listRowBackground(isSelected ? Color.accentColor : .clear )
           .listRowSeparator(.hidden)
-          .accessibilityAction(named: "Continue") {
-            model.displayServingsCounter()
-          }
         }
       } header: {
         VStack {
           Spacer()
             .frame(width: .zero, height: 0)
-            .accessibilityLabel("Step 2 of 4")
           
           Text("What's your diet?")
             .font(.system(.title, design: .serif))
@@ -48,9 +44,6 @@ struct DietSelector: View {
         .foregroundStyle(.primary)
         .padding(.bottom, 30)
         .multilineTextAlignment(.center)
-        .accessibilityAddTraits(.isHeader)
-        .accessibilityElement(children: .combine)
-        .accessibilityHint("Choose one diet from the next list")
       }
     }
     .listStyle(.plain)

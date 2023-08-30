@@ -8,9 +8,6 @@ struct Notification: Identifiable {
 
 struct AlmostThere: View {
   
-  @AccessibilityFocusState
-  private var isReadyButtonFocused: Bool
-  
   @Environment(OnboardingFeatureModel.self)
   private var model
   
@@ -34,7 +31,6 @@ struct AlmostThere: View {
               .bold()
               .multilineTextAlignment(.center)
               .animation(.default, value: model.isReady)
-              .accessibilityAddTraits(.updatesFrequently)
           }
           
           Spacer()
@@ -62,7 +58,6 @@ struct AlmostThere: View {
                 .animation(.easeInOut, value: progress)
                 .offset(y: isThirdStepCompleted ? -5 : 0)
             }
-            .accessibilityHidden(true)
             .padding(.top)
           }
         }
@@ -71,16 +66,8 @@ struct AlmostThere: View {
         VStack {
           Spacer()
             .frame(width: .zero, height: 0)
-            .accessibilityLabel(
-              """
-              "Step 4 of 4"
-              - Finding recipes for your diet
-              - Sorting out ingredients you don't eat
-              - Personalizing your recipes
-              """
-            )
           
-          Image(decorative: "wursthain")
+          Image("wursthain")
             .resizable()
             .scaledToFit()
             .clipShape(Circle())
@@ -93,10 +80,6 @@ struct AlmostThere: View {
                   .foregroundColor(.accentColor)
                   .rotationEffect(Angle(degrees: 270.0))
                   .animation(.easeInOut, value: progress)
-                // .accessibilityLabel(Text("Process"))
-                // .accessibilityAddTraits(.updatesFrequently)
-                // .accessibilityValue(Text("\(progress)"))
-                // .accessibilitySortPriority(1)
               }
             }
         }
@@ -118,10 +101,6 @@ struct AlmostThere: View {
         .controlSize(.large)
         .padding()
         .disabled(!model.isReady)
-        .accessibilityAddTraits(.updatesFrequently)
-        .accessibilityValue(isReadyButtonFocused ? ". Process completed" : "Still processing.")
-        .accessibilityHint(model.isReady ? "Complete the onboarding process and browse today's recipes tailored to you." : "")
-        .accessibilityFocused($isReadyButtonFocused)
       }
     }
     .task {
@@ -130,7 +109,6 @@ struct AlmostThere: View {
         if progress <= 0 {
           timer.invalidate()
           model.onboardingIsReady()
-          isReadyButtonFocused = true
         }
       }
     }

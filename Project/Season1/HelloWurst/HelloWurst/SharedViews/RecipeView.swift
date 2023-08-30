@@ -12,9 +12,7 @@ struct RecipeView: View {
         Color.clear
           .aspectRatio(contentMode: .fit)
           .background {
-            // This image is created with an explicit (accessibility) label.
-            // TODO: create image description
-            Image(decorative: recipe.image)
+            Image(recipe.image)
               .resizable()
               .aspectRatio(contentMode: .fill)
             /// > Tip: inner corner radius + padding = outer corner radius
@@ -101,7 +99,6 @@ struct RecipeSections: View {
           Spacer()
           Text("per serving (approx.)").font(.caption)
         }
-        .accessibilityElement(children: .combine)
       }
     )
   }
@@ -128,7 +125,6 @@ struct NutritionFactsView: View {
           .fixedSize()
           .padding(24)
           .background(Circle().stroke().fill(.yellow))
-          .accessibilityElement(children: .combine)
           
         case .protein(let fact):
           VStack {
@@ -138,7 +134,6 @@ struct NutritionFactsView: View {
           .fixedSize()
           .padding(24)
           .background(Circle().stroke().fill(.green))
-          .accessibilityElement(children: .combine)
           
         case .fat(let fact):
           VStack {
@@ -148,7 +143,6 @@ struct NutritionFactsView: View {
           .fixedSize()
           .padding(24)
           .background(Circle().stroke().fill(.orange))
-          .accessibilityElement(children: .combine)
           
         case .carbohydrate(let fact):
           VStack {
@@ -158,7 +152,6 @@ struct NutritionFactsView: View {
           .fixedSize()
           .padding(24)
           .background(Circle().stroke().fill(.gray))
-          .accessibilityElement(children: .combine)
         }
       }
     }
@@ -181,7 +174,6 @@ struct AuthorView: View {
         Button("More info") { openURL(author.source) }
           .buttonStyle(.borderedProminent)
       }
-      .accessibilityElement(children: .combine)
       .fontDesign(.serif)
     }
   }

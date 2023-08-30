@@ -9,9 +9,8 @@ struct OnboardingStepView: View {
     ZStack {
       Color.clear
         .background {
-          // This image is created with an explicit (accessibility) label.
           // TODO: create image description
-          Image(decorative: imageName)
+          Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fill)
             .offset(y: -12)
@@ -26,12 +25,9 @@ struct OnboardingStepView: View {
         
         Spacer()
       }
-      .accessibilityElement(children: .combine)
       .foregroundColor(.white)
       .padding(.vertical, 32)
-      .multilineTextAlignment(.center)
-      
-      
+      .multilineTextAlignment(.center)      
     }
   }
 }
