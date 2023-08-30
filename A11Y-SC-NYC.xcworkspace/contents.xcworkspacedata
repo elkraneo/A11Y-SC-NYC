@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Project"
+      name = "Project">
+      <Group
+         location = "group:start"
+         name = "Season 1">
+         <Group
+            location = "group:HelloWurst"
+            name = "HelloWurst">
+            <FileRef
+               location = "group:HelloWurst.xcodeproj">
+            </FileRef>
+            <Group
+               location = "group:HelloWurst"
+               name = "HelloWurst">
+               <Group
+                  location = "group:OnboardingFeature"
+                  name = "OnboardingFeature">
+                  <FileRef
+                     location = "group:GoalsSelector.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ServingsCounter.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingStepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingFeatureModel.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AlmostThere.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PresentationView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DietSelector.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:HelloWurstApp.swift">
+               </FileRef>
+               <Group
+                  location = "group:TodayFeature"
+                  name = "TodayFeature">
+                  <FileRef
+                     location = "group:TodayView.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Assets.xcassets"
+                  name = "Assets.xcassets">
+                  <Group
+                     location = "group:AppIcon.appiconset"
+                     name = "AppIcon.appiconset">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:AccentColor.colorset"
+                     name = "AccentColor.colorset">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Recipes"
+                     name = "Recipes">
+                     <Group
+                        location = "group:classic-truck.imageset"
+                        name = "classic-truck.imageset">
+                        <FileRef
+                           location = "group:classic-truck@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:classic-truck@3x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:classic-truck.jpg">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:green-coconut.imageset"
+                        name = "green-coconut.imageset">
+                        <FileRef
+                           location = "group:green-coconut@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:green-coconut.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:green-coconut@3x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:gingery-orange.imageset"
+                        name = "gingery-orange.imageset">
+                        <FileRef
+                           location = "group:gingery-orange.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:gingery-orange@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:gingery-orange@3x.png">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:radish-arugula.imageset"
+                        name = "radish-arugula.imageset">
+                        <FileRef
+                           location = "group:radish-arugula@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:radish-arugula@3x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:radish-arugula.jpg">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                     <Group
+                        location = "group:honey-mustard.imageset"
+                        name = "honey-mustard.imageset">
+                        <FileRef
+                           location = "group:honey-mustard.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:honey-mustard@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:honey-mustard@3x.png">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <Group
+                     location = "group:Onboarding"
+                     name = "Onboarding">
+                     <Group
+                        location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash.imageset"
+                        name = "ratul-ghosh-NPrWYa69Mz0-unsplash.imageset">
+                        <FileRef
+                           location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash 1.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash 1@3x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash 1@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash.imageset"
+                        name = "benjamin-kaufmann-sb3Cv_K14Js-unsplash.imageset">
+                        <FileRef
+                           location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash@3x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash.jpg">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash.imageset"
+                        name = "agnieszka-kowalczyk-obMdrL5pFWI-unsplash.imageset">
+                        <FileRef
+                           location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash@3x.jpg">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:wursthain.imageset"
+                        name = "wursthain.imageset">
+                        <FileRef
+                           location = "group:wursthain@3x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wursthain@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wursthain.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:SharedModels"
+                  name = "SharedModels">
+                  <FileRef
+                     location = "group:Diet.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Recipe.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Goal.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Preferences.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Recipe+Mock.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:SharedViews"
+                  name = "SharedViews">
+                  <FileRef
+                     location = "group:RecipeView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ServingsPicker.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Preview Content"
+                  name = "Preview Content">
+                  <Group
+                     location = "group:Preview Assets.xcassets"
+                     name = "Preview Assets.xcassets">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:AppCoreFeatureModel.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Destination.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MainView.swift">
+               </FileRef>
+               <Group
+                  location = "group:StepByStepFeature"
+                  name = "StepByStepFeature">
+                  <FileRef
+                     location = "group:StepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ClockView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StepByStepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Wall_Kitchen_Clock_50s.usdz">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StepByStepFeatureModel.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:ContentView.swift">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:complete"
+         name = "Season 2">
+         <Group
+            location = "group:HelloWurst"
+            name = "HelloWurst">
+            <FileRef
+               location = "group:HelloWurst.xcodeproj">
+            </FileRef>
+            <Group
+               location = "group:HelloWurst"
+               name = "HelloWurst">
+               <Group
+                  location = "group:OnboardingFeature"
+                  name = "OnboardingFeature">
+                  <FileRef
+                     location = "group:GoalsSelector.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ServingsCounter.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingStepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingFeatureModel.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AlmostThere.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PresentationView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DietSelector.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:HelloWurstApp.swift">
+               </FileRef>
+               <Group
+                  location = "group:TodayFeature"
+                  name = "TodayFeature">
+                  <FileRef
+                     location = "group:TodayView.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Assets.xcassets"
+                  name = "Assets.xcassets">
+                  <Group
+                     location = "group:AppIcon.appiconset"
+                     name = "AppIcon.appiconset">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:AccentColor.colorset"
+                     name = "AccentColor.colorset">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Recipes"
+                     name = "Recipes">
+                     <Group
+                        location = "group:classic-truck.imageset"
+                        name = "classic-truck.imageset">
+                        <FileRef
+                           location = "group:classic-truck@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:classic-truck@3x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:classic-truck.jpg">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:green-coconut.imageset"
+                        name = "green-coconut.imageset">
+                        <FileRef
+                           location = "group:green-coconut@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:green-coconut.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:green-coconut@3x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:gingery-orange.imageset"
+                        name = "gingery-orange.imageset">
+                        <FileRef
+                           location = "group:gingery-orange.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:gingery-orange@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:gingery-orange@3x.png">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:radish-arugula.imageset"
+                        name = "radish-arugula.imageset">
+                        <FileRef
+                           location = "group:radish-arugula@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:radish-arugula@3x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:radish-arugula.jpg">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                     <Group
+                        location = "group:honey-mustard.imageset"
+                        name = "honey-mustard.imageset">
+                        <FileRef
+                           location = "group:honey-mustard.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:honey-mustard@2x.png">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:honey-mustard@3x.png">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <Group
+                     location = "group:Onboarding"
+                     name = "Onboarding">
+                     <Group
+                        location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash.imageset"
+                        name = "ratul-ghosh-NPrWYa69Mz0-unsplash.imageset">
+                        <FileRef
+                           location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash 1.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash 1@3x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ratul-ghosh-NPrWYa69Mz0-unsplash 1@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash.imageset"
+                        name = "benjamin-kaufmann-sb3Cv_K14Js-unsplash.imageset">
+                        <FileRef
+                           location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash@3x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:benjamin-kaufmann-sb3Cv_K14Js-unsplash.jpg">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash.imageset"
+                        name = "agnieszka-kowalczyk-obMdrL5pFWI-unsplash.imageset">
+                        <FileRef
+                           location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:agnieszka-kowalczyk-obMdrL5pFWI-unsplash@3x.jpg">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:wursthain.imageset"
+                        name = "wursthain.imageset">
+                        <FileRef
+                           location = "group:wursthain@3x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wursthain@2x.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wursthain.jpg">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:SharedModels"
+                  name = "SharedModels">
+                  <FileRef
+                     location = "group:Diet.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Recipe.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Goal.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Preferences.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Recipe+Mock.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:SharedViews"
+                  name = "SharedViews">
+                  <FileRef
+                     location = "group:RecipeView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ServingsPicker.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Preview Content"
+                  name = "Preview Content">
+                  <Group
+                     location = "group:Preview Assets.xcassets"
+                     name = "Preview Assets.xcassets">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:AppCoreFeatureModel.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Destination.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MainView.swift">
+               </FileRef>
+               <Group
+                  location = "group:StepByStepFeature"
+                  name = "StepByStepFeature">
+                  <FileRef
+                     location = "group:StepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ClockView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StepByStepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Wall_Kitchen_Clock_50s.usdz">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StepByStepFeatureModel.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:ContentView.swift">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+</Workspace>

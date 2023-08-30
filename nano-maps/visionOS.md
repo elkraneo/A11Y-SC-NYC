@@ -1,0 +1,309 @@
+- Interaction #10090 #10094 #10113
+	- Maximum of two simultaneous inputs #10090 #10094
+	- Taps, long presses, drags #10260
+	- Hover Effects #10080 #10094 #10110 #10113
+		- opt out with .hoverEffectDisabled(Bool) #10094
+		- .contentShape modifier #10094
+	- Look to dictate #10090
+	- Digital Crown #10034 #10075 #10260
+	- passthrough #10034 #10203
+	- Wireless devices #10260
+		- accessibility hardware #10260
+		- Game Controllers #10094
+			- GCSupportsControllerUserInteraction #10094
+	- 3D gestures #10109 #10113 #10203
+		- InputTargetComponent #10113
+		- CollisionComponent #10113
+		- SpatialTapGesture #10113
+		- DragGesture #10080 #10113
+		- .targetedToAnyEntity() #10113 #10203
+			- has an `entity` property #10203
+			- connects SwiftUI interactions to RealityKit content #10203
+		- Custom gesture recognizers #10082 #10094
+	- Accessibility #10113 #10260
+		- Vision accessibility #10034
+			- VoiceOver #10034
+				- Spatial Audio #10034 #10260
+				- Does not receive hand input by default #10034
+			- Gestures #10034
+				- Direct Gesture Mode #10034 #10094
+				- Voice Overs default interaction mode #10034
+			- RealityKit #10034
+				- AccessibilityComponent #10034
+					- label #10034
+					- value #10034
+					- traits #10034
+					- Custom #10034
+						- rotors #10034
+						- actions #10034
+						- content #10034
+					- System actions #10034
+			- Post announcements #10034
+			- Eye effort #10078
+				- avoid upward and diagonal eye rotation #10078
+		- Visual design #10034
+			- Dynamic Type #10034
+			- Alternate layouts #10034
+			- 4:1 contrast ratio #10034
+			- Head-locked content #10034 #10078
+				- .accessibilityPrefersHeadAnchorAlternative #10034
+				- lazy-follow animation #10078
+			- Visual depth cues #10078
+				- Color #10078
+				- Blur #10078
+				- relative size #10078
+				- gentle motion #10078
+				- added #10078
+					- background #10078
+					- light and shadow #10078
+					- occlusion #10078
+					- texture density #10078
+				- Conflicting cues #10078
+					- repeating patterns #10078
+			- Content parameters #10078
+				- Depth #10078
+				- Size and contrast #10078
+		- Motor #10034
+			- Dwell Control #10034
+			- Pointer Control #10034
+				- Head position #10034
+				- Wrist position #10034
+				- Index finger #10034
+			- Switch Control #10034
+		- Motion #10034
+			- .accessibilityReduceMotion #10034
+			- Motion in windows #10078
+				- camera motions #10078
+				- focus of expansion #10078
+				- plain textures #10078
+				- low luminance contrast #10078
+			- Oscillating motion #10078
+				- avoid oscillations with 0.2 Hz frequencies #10078
+				- low amplitude of the motion #10078
+				- make the content semitransparent #10078
+			- Motion of virtual objects #10078
+		- Cognitive #10034
+			- Guided Access #10034
+		- Hearing #10034
+			- Captions #10034
+				- .isClosedCaptioningEnabled #10034
+- Media #10094
+	- AVCapture DiscoverSessions #10094
+	- AVRoutePickerView and Picture in Picture are unavailable #10094
+	- visionOS locks once removed #10094
+	- VNDocumentCameraViewController #10094
+- Materials #10090 #10110 #10113
+	- No dark or light appearance #10113 #10260
+	- This platform reports its color scheme as dark #10110
+- Facts
+	- Based on iOS #10090
+	- App Store Connect relies on UIRequiredDeviceCapabilities #10090
+	- SpriteKit and storyboards are only available in the iOS SDK #10090
+	- ARKit Available in Swift and C #10082
+- IDEs
+	- Xcode #10260
+		- Previews #10203 #10260
+			- object mode #10203
+			- .previewLayout(.sizeThatFits) #10203
+		- Runtime visualizations #10260
+		- Instruments #10260
+		- Simulator #10203
+	- Reality Composer Pro #10080 #10081 #10203 #10260
+		- MaterialX #10260
+		- RealityKit content packages #10203
+	- Unity #10260
+- ARKit #10081 #10082 #10090 #10111 #10203
+	- World tracking #10082
+		- 6DOF #10082
+		- WorldTrackingProvider #10082
+			- WorldAnchor #10082
+				- TrackableAnchor #10082
+				- Persistence #10082
+				- Maps #10082
+		- Device pose #10082
+			- CompositorServices #10082
+	- ARKitSession #10082
+		- DataProvider #10082
+		- Anchor #10082
+	- Hand tracking #10082 #10111 #10203 #10260
+		- HandTrackingProvider #10082
+			- HandAnchor #10082
+				- Skeleton #10082
+				- Chirality #10082 #10111 #10260
+				- custom gestures #10082
+			- hand occlusion #10082
+				- .upperLimbVisibility #10082 #10111
+	- Scene understanding #10082
+		- Plane detection #10082
+			- PlaneDetectionProvider #10082
+				- PlaneAnchor #10082
+				- basic physics simulations #10082
+				- Plane classifications #10082
+					- .wall #10082
+					- .floor #10082
+					- .ceiling #10082
+					- .table #10082
+					- .seat #10082
+					- .window #10082
+					- .door #10082
+		- Scene geometry #10082
+			- SceneReconstructionProvider #10082
+				- MeshAnchor #10082
+				- higher-fidelity physics simulations #10082
+				- Mesh geometry #10082
+					- vertices #10082
+					- normals #10082
+					- faces #10082
+					- Mesh face classifications #10082
+						- .wall #10082
+						- .floor #10082
+						- .ceiling #10082
+						- .table #10082
+						- .seat #10082
+						- .window #10082
+						- .door #10082
+						- .stairs #10082
+						- .bed #10082
+						- .cabinet #10082
+						- .homeAppliance #10082
+						- .tv #10082
+						- .plant #10082
+		- Image tracking #10082
+			- ImageTrackingProvider #10082
+				- ImageAnchor #10082
+- Location #10090
+	- Approximated via Wi-Fi #10090
+	- Location sharing supported via iPhone #10090
+- Privacy #10081 #10082 #10113 #10260
+	- Local authentication #10090
+		- Optic ID #10090
+	- head-pose data #10111
+	- Hover Effects #10080 #10094 #10110 #10113
+	- Anchor transform #10081 #10082
+	- ARKit authorization API #10082
+- Scenes #10109
+	- type of experience #10034
+		- Media #10034
+		- Collaboration #10034
+		- Connection (Social) #10034
+	- Windows #10080 #10109 #10111 #10203 #10260
+		- Glass backgrounds #10090 #10109 #10110
+		- Ornaments #10090 #10109 #10110
+			- TabView #10110
+			- toolbar #10110
+			- Custom Ornaments #10109 #10110
+		- Layout #10090
+			- Dynamic content scaling #10094 #10110
+			- iPad variant preferred #10090
+			- UIPreferredDefaultInterface Orientation key #10090
+			- apps match their iPad light-mode appearance #10094
+		- Prompts do not present modally #10094
+		- Model3D #10260
+	- Volumes #10080 #10090 #10109 #10111 #10113 #10203 #10260
+		- Geometry effects #10113
+		- Built for the Shared Space #10260
+		- Extension of a window #10260
+	- Full Spaces #10090 #10109 #10111 #10260
+		- @Environment(\.openImmersiveSpace) var openImmersiveSpace #10080 #10203
+		- Scene Phases #10111
+		- Spectrum of immersion #10260
+			- More Presence #10260
+			- Deeper Immersion #10260
+		- Immersion Styles #10080 #10109 #10111 #10260
+			- Mixed #10080 #10109 #10111 #10203 #10260
+			- Progressive #10109 #10111 #10203 #10260
+				- ~180-degree view #10203
+			- Full #10080 #10109 #10111 #10203 #10260
+				- hides passthrough entirely #10203
+		- Coordinate Conversions #10111
+			- Immersive Space coordinate space #10111
+				- placed at a fixed location when it is opened #10203
+			- Private Immersive Space #10111
+			- Group Immersive Space #10111
+		- Customization #10111
+			- scene manifest #10111
+			- surrounding effects #10111
+			- access to dedicated rendering resources #10203
+	- SharePlay #10111 #10260
+		- Shared Context #10087 #10260
+			- Spatial Personas #10034 #10087
+				- Spatial Persona Templates #10087 #10111 #10260
+					- Side-by-Side (default) #10034 #10087
+					- Conversational #10034 #10087
+					- Surround #10034 #10087
+					- Template preferences #10087
+						- .none (default) #10087
+						- .sideBySide #10087
+						- .conversational #10087
+				- up to four other Spatial Personas #10034
+			- common coordinate system #10034
+			- common frame of reference #10034
+			- Spatial Audio #10034
+		- Shared activities #10034
+		- SharePlay from the Share menu #10087
+		- Windowed apps #10087
+			- System coordinator #10087
+				- isSpatial #10087
+			- Dynamic Size #10087
+			- Scene association #10087
+				- scene activation conditions #10087
+					- Can #10087
+					- Prefers #10087
+				- behavior #10087
+					- Default #10087
+					- Content #10087
+					- None #10087
+		- Immersive apps #10087
+			- Private immersive space #10087
+			- Group immersive space #10087
+				- Personas #10087
+				- systemExperienceDisplacement #10087
+				- GeometryReader3D #10087
+				- Content extent #10087
+				- Group activity #10087
+					- .groupImmersionStyle #10087
+- RealityKit #10109 #10111 #10260
+	- Entities and Components #10080
+		- Same 3D coordinate conventions as ARKit #10080
+		- One unit is one meter. #10080
+		- Custom components #10080
+		- Systems #10080
+		- Anchors #10081
+			- tracking modes #10081
+				- .continuous #10081
+				- .once #10081
+			- ImmersiveSpace #10081
+			- .immersionStyle #10081
+		- ParticleEmitterComponent #10081
+		- VideoPlayerComponent #10081
+			- 2D & 3D video formats using MV-HEVC #10081
+			- Captions #10081
+			- Passthrough tinting #10081
+				- .isPassthroughTintingEnabled #10081
+			- VideoPlayerEvents #10081
+				- ContentTypeDidChange #10081
+				- ViewingModeDidChange #10081
+				- VideoSizeDidChange #10081
+	- Model3D #10080 #10109 #10113 #10260
+	- RealityView #10080 #10081 #10109 #10111 #10203 #10260
+		- Attachments #10080 #10081 #10109 #10113 #10260
+			- annotations and affordances #10113
+			- Gestures #10113
+			- Model3D #10113
+		- Asynchronous loading #10111
+		- Coordinate space conversion #10080 #10111 #10260
+		- update closure #10203
+			- not a rendering update loop #10203
+			- only called when the SwiftUI state changes #10203
+		- Connect observable state to component properties #10080
+		- Subscribe to events #10080
+	- .targetedToEntity() #10080
+	- Animation #10080
+	- Audio #10080
+		- Spatial (default) #10080
+		- Ambient #10080
+		- Channel #10080
+	- Portals #10081
+		- ImageBasedLight #10081
+		- PortalMaterial #10081
+		- Portal (Component) #10081
