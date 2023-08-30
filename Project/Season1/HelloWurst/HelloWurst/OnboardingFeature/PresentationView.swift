@@ -1,16 +1,21 @@
 import SwiftUI
 
 struct PresentationView: View {
+  
   @Environment(OnboardingFeatureModel.self)
-  private var model
+  var model
   
   private let timer = Timer.publish(every: 5, tolerance: 0.5, on: .main, in: .common).autoconnect()
+  
+  private func cancelTimer() {
+    timer.upstream.connect().cancel()
+  }
   
   var body: some View {
     @Bindable var model = model
     let swipeToStopTimer = DragGesture()
       .onChanged { _ in
-        timer.upstream.connect().cancel()
+        cancelTimer()
       }
     
     TabView(selection: $model.currentSlide) {

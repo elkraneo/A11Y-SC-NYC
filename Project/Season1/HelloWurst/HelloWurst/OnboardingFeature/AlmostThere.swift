@@ -1,25 +1,12 @@
 import SwiftUI
 
-struct Notification: Identifiable {
-  var title: String
-  var subtitle: String
-  var id: UUID
-}
-
 struct AlmostThere: View {
   
   @Environment(OnboardingFeatureModel.self)
-  private var model
+  var model
   
   @State
   var progress = 1.0
-  
-  let notifications: [Notification] = [
-    .init(title: "Finding recipes for your diet", subtitle: "sub", id: UUID()),
-    .init(title: "Sorting out ingredients you don't eat", subtitle: "sub", id: UUID()),
-    .init(title: "Personalizing your recipes", subtitle: "sub", id: UUID()),
-    .init(title: "Ready to go!", subtitle: "sub", id: UUID()),
-  ]
   
   var body: some View {
     List {
@@ -63,27 +50,22 @@ struct AlmostThere: View {
         }
         .listRowSeparator(.hidden)
       } header: {
-        VStack {
-          Spacer()
-            .frame(width: .zero, height: 0)
-          
-          Image("wursthain")
-            .resizable()
-            .scaledToFit()
-            .clipShape(Circle())
-            .shadow(radius: 5)
-            .overlay {
-              withAnimation {
-                Circle()
-                  .trim(from: 0.0, to: progress)
-                  .stroke(style: StrokeStyle(lineWidth: 16.0, lineCap: .round, lineJoin: .round))
-                  .foregroundColor(.accentColor)
-                  .rotationEffect(Angle(degrees: 270.0))
-                  .animation(.easeInOut, value: progress)
-              }
+        Image("wursthain")
+          .resizable()
+          .scaledToFit()
+          .clipShape(Circle())
+          .shadow(radius: 5)
+          .overlay {
+            withAnimation {
+              Circle()
+                .trim(from: 0.0, to: progress)
+                .stroke(style: StrokeStyle(lineWidth: 16.0, lineCap: .round, lineJoin: .round))
+                .foregroundColor(.accentColor)
+                .rotationEffect(Angle(degrees: 270.0))
+                .animation(.easeInOut, value: progress)
             }
-        }
-        .padding()
+          }
+          .padding()
       }
     }
     .listStyle(.plain)

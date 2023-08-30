@@ -1,14 +1,12 @@
 import SwiftUI
 
 struct TodayView: View {
+  
   @Environment(AppCoreFeatureModel.self)
-  private var model
+  var model
   
   @State
   var scrolledRecipe: Recipe.ID?
-  
-  @State
-  var displayOrnament = false
   
   var body: some View {
     NavigationStack {
@@ -18,7 +16,7 @@ struct TodayView: View {
             NavigationLink(destination: RecipeView(recipe: recipe)) {
               VStack {
                 Spacer()
-                
+
                 Summary(recipe: recipe)
                   .padding(.horizontal)
                   .background(.black.opacity(0.5))
@@ -42,7 +40,6 @@ struct TodayView: View {
       .ignoresSafeArea()
       .task {
         scrolledRecipe = model.recipes.first?.id
-        displayOrnament = true
       }
     }
   }
@@ -72,7 +69,7 @@ struct Summary: View {
         Image(systemName: recipe.diet.systemImage)
           .font(.title)
           .opacity(0.5)
-
+        
         Divider().overlay(.white).frame(maxHeight: 55)
         
         VStack(alignment: .leading) {
@@ -83,7 +80,7 @@ struct Summary: View {
           .font(.caption)
           .foregroundColor(.accentColor)
           .background(.clear)
-          
+
           Text(price)
             .font(.title)
         }

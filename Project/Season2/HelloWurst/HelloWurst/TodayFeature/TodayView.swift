@@ -1,11 +1,9 @@
 import SwiftUI
 
 struct TodayView: View {
-  @Environment(AppCoreFeatureModel.self)
-  private var model
   
-  @Environment(\.accessibilityVoiceOverEnabled)
-  private var voiceOverEnabled: Bool
+  @Environment(AppCoreFeatureModel.self)
+  var model
   
   @State
   var scrolledRecipe: Recipe.ID?
@@ -60,12 +58,10 @@ struct TodayView: View {
         attachmentAnchor: .scene(.bottom)
       ) {
         if let recipe = model.recipes.first(where: { $0.id == scrolledRecipe }) {
-          withAnimation {
-            Summary(recipe: recipe)
-              .padding()
-              .glassBackgroundEffect()
-              .accessibilityHidden(true)
-          }
+          Summary(recipe: recipe)
+            .padding()
+            .glassBackgroundEffect()
+            .accessibilityHidden(true)
         }
       }
 #endif

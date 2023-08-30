@@ -1,0 +1,107 @@
+@Tutorial(time: 30, projectFiles: "HelloWurst-S1.zip") {
+  @XcodeRequirement(title: "Xcode 15", destination: "https://developer.apple.com/download/applications/")
+  
+  @Intro(title: "Adopting visionOS") {
+    Some things don't feel right, so you should follow your intuition and combine it with some guidelines.
+    
+    @Image(source: adopting-intro, alt: "View of the Today section in the museum scene in the Xcode previews")
+  }
+  
+  @Section(title: "Quick wins ") {
+    @ContentAndMedia {
+      We can get a long way with a first pass. 
+      
+      @Image(source: adopting-0, alt: "The recipe list section is displayed in a spatial context, with hints of visionOS language usage")
+    }
+    
+    @Steps {
+      
+      @Step {
+        When adopting new platforms, layout is one of the most common areas for improvement
+        
+        @Code(name: "PresentationView.swift", file: 01-adopting-code-01-01.swift, previousFile: 01-adopting-code-01-00.swift)
+      }
+      
+      @Step {
+        [ViewModifiers](https://developer.apple.com/documentation/swiftui/viewmodifier) can be adapted to fit every platform thanks to conditional statements
+        
+        @Code(name: "PresentationView.swift", file: 01-adopting-code-01-02.swift)
+      }
+      
+      @Step {
+        Also, SwiftUI lets us make complex flows based on [Environment](https://developer.apple.com/documentation/swiftui/environment) property wrappers
+        
+        @Code(name: "PresentationView.swift", file: 01-adopting-code-01-03b.swift, previousFile: 01-adopting-code-01-03a.swift)
+      }
+      
+      @Step {
+        For example, avoiding automatic animations when VoiceOver is enabled.
+        
+        @Code(name: "PresentationView.swift", file: 01-adopting-code-01-04.swift,)
+      }
+      
+      
+      @Step {
+        A wide variety of modifiers and initializers can be used to improve semantics
+        
+        @Code(name: "AlmostThere.swift", file: 01-adopting-code-01-05.swift, reset: true)
+      }
+      
+      @Step {
+        Useful for cutting out information that is not relevant to screen readers, for example
+        
+        @Code(name: "AlmostThere.swift", file: 01-adopting-code-01-06.swift)
+      }
+      
+      @Step {
+        Or for the purpose of managing events and notifications at multiple levels beyond the visual level
+        
+        @Code(name: "AlmostThere.swift", file: 01-adopting-code-01-07.swift)
+      }
+      
+    }
+    
+  }
+  
+  @Section(title: "Then again at the same time") {
+    @ContentAndMedia {
+      Similar steps used on another screen
+    }
+    
+    @Steps {
+      
+      @Step {
+        Be explicit about semantics and embrace new states
+        
+        @Code(name: "TodayView.swift", file: 01-adopting-code-02-01.swift, previousFile: 01-adopting-code-02-00.swift)
+      }
+      
+      @Step {
+        If you think the content is the winner, be bold in your decisions.
+        
+        @Code(name: "TodayView.swift", file: 01-adopting-code-02-02.swift)
+      }
+    }
+  }
+    
+  @Section(title: "And, of course, ornaments") {
+    
+    @ContentAndMedia {
+      Ornaments are a semantic component
+      
+      @Image(source: adopting-ornaments-1, alt: "Close up of the today screen showing a tab view and a custom ornament")
+    }
+    
+    @Steps {
+      
+      @Step {
+        They can be positioned and displayed with much flexibility
+        
+        > Important: Accessibility navigation becomes disconnected, so be careful about the controls in it
+        
+        @Code(name: "TodayView.swift", file: 01-adopting-code-03-01.swift, previousFile: 01-adopting-code-03-00.swift)
+      }
+    }
+  }
+    
+}

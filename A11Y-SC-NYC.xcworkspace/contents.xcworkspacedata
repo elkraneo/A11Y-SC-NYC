@@ -19,44 +19,21 @@
             <Group
                location = "group:HelloWurst"
                name = "HelloWurst">
-               <Group
-                  location = "group:OnboardingFeature"
-                  name = "OnboardingFeature">
-                  <FileRef
-                     location = "group:GoalsSelector.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:ServingsCounter.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:OnboardingStepView.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:OnboardingFeatureModel.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:OnboardingView.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:AlmostThere.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:PresentationView.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:DietSelector.swift">
-                  </FileRef>
-               </Group>
+               <FileRef
+                  location = "group:AppCoreFeatureModel.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:ContentView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Destination.swift">
+               </FileRef>
                <FileRef
                   location = "group:HelloWurstApp.swift">
                </FileRef>
-               <Group
-                  location = "group:TodayFeature"
-                  name = "TodayFeature">
-                  <FileRef
-                     location = "group:TodayView.swift">
-                  </FileRef>
-               </Group>
+               <FileRef
+                  location = "group:MainView.swift">
+               </FileRef>
                <Group
                   location = "group:Assets.xcassets"
                   name = "Assets.xcassets">
@@ -237,6 +214,45 @@
                   </Group>
                </Group>
                <Group
+                  location = "group:OnboardingFeature"
+                  name = "OnboardingFeature">
+                  <FileRef
+                     location = "group:AlmostThere.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DietSelector.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GoalsSelector.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingFeatureModel.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingStepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PresentationView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ServingsCounter.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Preview Content"
+                  name = "Preview Content">
+                  <Group
+                     location = "group:Preview Assets.xcassets"
+                     name = "Preview Assets.xcassets">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
                   location = "group:SharedModels"
                   name = "SharedModels">
                   <FileRef
@@ -266,26 +282,6 @@
                   </FileRef>
                </Group>
                <Group
-                  location = "group:Preview Content"
-                  name = "Preview Content">
-                  <Group
-                     location = "group:Preview Assets.xcassets"
-                     name = "Preview Assets.xcassets">
-                     <FileRef
-                        location = "group:Contents.json">
-                     </FileRef>
-                  </Group>
-               </Group>
-               <FileRef
-                  location = "group:AppCoreFeatureModel.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Destination.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:MainView.swift">
-               </FileRef>
-               <Group
                   location = "group:StepByStepFeature"
                   name = "StepByStepFeature">
                   <FileRef
@@ -304,9 +300,13 @@
                      location = "group:StepByStepFeatureModel.swift">
                   </FileRef>
                </Group>
-               <FileRef
-                  location = "group:ContentView.swift">
-               </FileRef>
+               <Group
+                  location = "group:TodayFeature"
+                  name = "TodayFeature">
+                  <FileRef
+                     location = "group:TodayView.swift">
+                  </FileRef>
+               </Group>
             </Group>
          </Group>
       </Group>
@@ -322,44 +322,21 @@
             <Group
                location = "group:HelloWurst"
                name = "HelloWurst">
-               <Group
-                  location = "group:OnboardingFeature"
-                  name = "OnboardingFeature">
-                  <FileRef
-                     location = "group:GoalsSelector.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:ServingsCounter.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:OnboardingStepView.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:OnboardingFeatureModel.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:OnboardingView.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:AlmostThere.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:PresentationView.swift">
-                  </FileRef>
-                  <FileRef
-                     location = "group:DietSelector.swift">
-                  </FileRef>
-               </Group>
+               <FileRef
+                  location = "group:AppCoreFeatureModel.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:ContentView.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Destination.swift">
+               </FileRef>
                <FileRef
                   location = "group:HelloWurstApp.swift">
                </FileRef>
-               <Group
-                  location = "group:TodayFeature"
-                  name = "TodayFeature">
-                  <FileRef
-                     location = "group:TodayView.swift">
-                  </FileRef>
-               </Group>
+               <FileRef
+                  location = "group:MainView.swift">
+               </FileRef>
                <Group
                   location = "group:Assets.xcassets"
                   name = "Assets.xcassets">
@@ -540,6 +517,45 @@
                   </Group>
                </Group>
                <Group
+                  location = "group:OnboardingFeature"
+                  name = "OnboardingFeature">
+                  <FileRef
+                     location = "group:AlmostThere.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DietSelector.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GoalsSelector.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingFeatureModel.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingStepView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OnboardingView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PresentationView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ServingsCounter.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Preview Content"
+                  name = "Preview Content">
+                  <Group
+                     location = "group:Preview Assets.xcassets"
+                     name = "Preview Assets.xcassets">
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
                   location = "group:SharedModels"
                   name = "SharedModels">
                   <FileRef
@@ -569,26 +585,6 @@
                   </FileRef>
                </Group>
                <Group
-                  location = "group:Preview Content"
-                  name = "Preview Content">
-                  <Group
-                     location = "group:Preview Assets.xcassets"
-                     name = "Preview Assets.xcassets">
-                     <FileRef
-                        location = "group:Contents.json">
-                     </FileRef>
-                  </Group>
-               </Group>
-               <FileRef
-                  location = "group:AppCoreFeatureModel.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:Destination.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:MainView.swift">
-               </FileRef>
-               <Group
                   location = "group:StepByStepFeature"
                   name = "StepByStepFeature">
                   <FileRef
@@ -607,9 +603,13 @@
                      location = "group:StepByStepFeatureModel.swift">
                   </FileRef>
                </Group>
-               <FileRef
-                  location = "group:ContentView.swift">
-               </FileRef>
+               <Group
+                  location = "group:TodayFeature"
+                  name = "TodayFeature">
+                  <FileRef
+                     location = "group:TodayView.swift">
+                  </FileRef>
+               </Group>
             </Group>
          </Group>
       </Group>

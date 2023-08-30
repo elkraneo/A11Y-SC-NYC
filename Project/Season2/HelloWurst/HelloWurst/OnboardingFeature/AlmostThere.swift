@@ -1,28 +1,15 @@
 import SwiftUI
 
-struct Notification: Identifiable {
-  var title: String
-  var subtitle: String
-  var id: UUID
-}
-
 struct AlmostThere: View {
   
   @AccessibilityFocusState
-  private var isReadyButtonFocused: Bool
+  var isReadyButtonFocused: Bool
   
   @Environment(OnboardingFeatureModel.self)
-  private var model
+  var model
   
   @State
   var progress = 1.0
-  
-  let notifications: [Notification] = [
-    .init(title: "Finding recipes for your diet", subtitle: "sub", id: UUID()),
-    .init(title: "Sorting out ingredients you don't eat", subtitle: "sub", id: UUID()),
-    .init(title: "Personalizing your recipes", subtitle: "sub", id: UUID()),
-    .init(title: "Ready to go!", subtitle: "sub", id: UUID()),
-  ]
   
   var body: some View {
     List {
@@ -93,10 +80,6 @@ struct AlmostThere: View {
                   .foregroundColor(.accentColor)
                   .rotationEffect(Angle(degrees: 270.0))
                   .animation(.easeInOut, value: progress)
-                // .accessibilityLabel(Text("Process"))
-                // .accessibilityAddTraits(.updatesFrequently)
-                // .accessibilityValue(Text("\(progress)"))
-                // .accessibilitySortPriority(1)
               }
             }
         }
