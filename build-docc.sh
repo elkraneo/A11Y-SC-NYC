@@ -2,7 +2,7 @@
 
 xcrun xcodebuild docbuild \
 	-sdk macosx14.0\
-    -scheme AccessibleSpatialComputing \
+    -scheme A11Y-SC-NYC \
     -destination 'generic/platform=macOS' \
     -derivedDataPath "$PWD/.derivedData"
 

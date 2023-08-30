@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -224,7 +224,6 @@
 			);
 			mainGroup = 40E7520D2A8667990040E74F;
 			packageReferences = (
-				404056E52A9F52CE00370876 /* XCLocalSwiftPackageReference "../../.." */,
 			);
 			productRefGroup = 40E752172A8667990040E74F /* Products */;
 			projectDirPath = "";
@@ -489,13 +488,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		404056E52A9F52CE00370876 /* XCLocalSwiftPackageReference "../../.." */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../..;
-		};
-/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = 40E7520E2A8667990040E74F /* Project object */;
 }
