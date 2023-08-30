@@ -1,5 +1,5 @@
 # Glossary
-A list of terms used in visionOS
+A list of terms used in visionOS.
 
 ## Overview
 

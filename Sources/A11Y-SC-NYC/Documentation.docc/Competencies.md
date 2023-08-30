@@ -1,10 +1,9 @@
 # Competencies
-
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+Skillet that helps you use Spatial Computing concepts effectively.
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+Develop essential skills in spatial computing understanding foundational components, leveraging SwiftUI for immersive experiences, knowing collaborative interactions, and ensuring accessibility. Transversal competencies cover designing spatial UI, understanding spatial design principles, crafting intuitive interactions, and optimizing experiences for human vision and motion in visionOS.
 
 ### Essential
 

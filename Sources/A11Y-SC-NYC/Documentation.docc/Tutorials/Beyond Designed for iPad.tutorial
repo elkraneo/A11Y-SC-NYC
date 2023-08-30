@@ -1,0 +1,60 @@
+@Tutorial(time: 5) {
+  @Intro(title: "Beyond (Designed for iPad)") {
+    Intro
+    
+    @Image(source: beyond-intro, alt: "Designed for iPad version running on the simulator")
+  }
+  @Section(title: "Replace Destinations") {
+    @ContentAndMedia {
+      When the visionOS SDK is installed, Xcode automatically adds Apple Vision (Designed for iPad) to the Supported Destinations for projects that use the iOS SDK.
+      
+      @Image(source: destinations-0, alt: "Xcode supported destinations section displaying the default values")
+    }
+    
+    @Steps {
+      @Step {
+        Select
+        
+        Project > Target > General > Supported Destinations > Add Destination
+        
+        @Image(source: destinations-1, alt: "Add destination dropdown")
+        
+      }
+      
+      @Step {
+        Choose "Apple Vision" to enable the visionOS SDK
+        
+        @Image(source: destinations-2, alt: "Add destination dropdown")
+      }
+      
+      @Step {
+        From the "Enable Destination Support?" alert select "Enable"
+        
+        @Image(source: destinations-3, alt: "Destination support alert")
+      }
+      
+      @Step {
+        Notice that both destinations are turned on at the same time
+        
+        > Important: Apple Vision Designed for iPad" will be superseded by a native Apple vision app on the App Store.
+        
+        @Image(source: destinations-4, alt: "Multiple destinations conflict")
+      }
+      
+      @Step {
+        Remove the "Apple Vision (Designed for iPad)" destination
+        
+        @Image(source: destinations-5, alt: "Destination support alert")
+      }
+      
+      @Step {
+        The full visionOS SDK capabilities are now yours to enjoy.
+        
+        @Image(source: destinations-6, alt: "Final destinations setup")
+      }
+    }
+  }
+}
+
+
+

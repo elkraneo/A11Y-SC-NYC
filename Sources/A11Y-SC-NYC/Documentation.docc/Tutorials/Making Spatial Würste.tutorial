@@ -1,15 +1,15 @@
-@Tutorials(name: "Making Spatial Würste") {
-    @Intro(title: "<#text#>") {
-        <#text#>
-        
-        @Image(source: <#file#>, alt: "<#accessible description#>")
-    }
+@Tutorials(name: "Hello Wurst") {
+  @Intro(title: "Making Spatial Würste") {
+    This tutorial will guide you through the process of creating the visionOS version of _Hello Wurst_.
     
-    @Chapter(name: "<#text#>") {
-        <#text#>
-        
-        @Image(source: <#file#>, alt: "<#accessible description#>")
-        
-        @TutorialReference(tutorial: "doc:<#tutorial name#>")
-    }
+    @Image(source: intro, alt: "The Hello Wurst app recipe screen is displayed on the kitchen ceiling")
+  }
+  
+  @Chapter(name: "Beyond (Designed for iPad)") {
+    From "it works and feels just like iPad" to "right at home on this device ".
+    
+    @Image(source: choose-your-experience, alt: "Choose your experience table from the WWDC23 session screenshot")
+    
+    @TutorialReference(tutorial: "doc:Beyond-Designed-for-iPad")
+  }
 }

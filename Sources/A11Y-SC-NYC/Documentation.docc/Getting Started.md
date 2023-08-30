@@ -8,7 +8,7 @@ Testing
 
 ## Topics
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
+### Key Concepts
 
-- <doc:Glossary>
 - <doc:Competencies>
+- <doc:Glossary>
