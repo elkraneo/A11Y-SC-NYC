@@ -1,4 +1,4 @@
-@Tutorials(name: "<#text#>") {
+@Tutorials(name: "Making Spatial Würste") {
     @Intro(title: "<#text#>") {
         <#text#>
         
