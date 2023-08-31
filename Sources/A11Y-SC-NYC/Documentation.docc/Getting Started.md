@@ -15,5 +15,4 @@
 
 ### Tutorials
 
-- <doc:Making-Spatial-Wu-rste>
-- <doc:Adopting-visionOS>
+- <doc:Making-Spatial-Wurste>
