@@ -1,6 +1,6 @@
 # Getting Started
 
-Testing
+<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
 
 ## Overview
 
@@ -12,3 +12,4 @@ Testing
 
 - <doc:Competencies>
 - <doc:Glossary>
+- <doc:Making-Spatial-Wu-rste>
