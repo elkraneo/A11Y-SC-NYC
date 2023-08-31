@@ -12,4 +12,8 @@
 
 - <doc:Competencies>
 - <doc:Glossary>
+
+### Tutorials
+
 - <doc:Making-Spatial-Wu-rste>
+- <doc:Adopting-visionOS>
