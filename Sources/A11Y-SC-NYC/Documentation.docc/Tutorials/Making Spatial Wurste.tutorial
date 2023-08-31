@@ -15,12 +15,20 @@
     @TutorialReference(tutorial: "doc:Adopting-visionOS")
   }
 
-  @Chapter(name: "Accessible Spatial Computing") {
+  @Chapter(name: "Accessible Spatial Experiences") {
     Everything Everywhere All at Once
     
     @Image(source: accesible-spatial-computing, alt: "Accessible Spatial Computing banner made with the SFSymbols related to Vision Pro and Accessibility")
     
-    @TutorialReference(tutorial: "doc:Accessible-Spatial-Computing")
+    @TutorialReference(tutorial: "doc:Accessible-Spatial")
+  }
+  
+  @Chapter(name: "Another Dimension") {
+    Accessible ECS
+    
+    @Image(source: accessibility-component, alt: "AccessibilityComponent in s sphere displayed by VoiceOver on the museum preview")
+    
+    @TutorialReference(tutorial: "doc:AccessibilityComponent")
   }
   
   @Resources {

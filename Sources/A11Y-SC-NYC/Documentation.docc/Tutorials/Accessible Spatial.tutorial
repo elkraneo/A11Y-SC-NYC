@@ -1,5 +1,5 @@
 @Tutorial(time: 59) {
-    @Intro(title: "Accessible Spatial Computing") {
+    @Intro(title: "Accessible & Spatial") {
       In the heart of the mountain
         
         @Image(source: <#file#>, alt: "<#accessible description#>")

@@ -69,7 +69,6 @@ struct RecipeView: View {
         }
       }
 #endif
-      
       .navigationTitle(recipe.name)
       .toolbar {
 #if os(visionOS)
