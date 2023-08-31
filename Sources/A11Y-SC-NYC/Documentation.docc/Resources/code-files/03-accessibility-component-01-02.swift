@@ -15,5 +15,9 @@ struct HelloWurstApp: App {
         .environment(model)
         .environment(preferences)
     }
+    
+    WindowGroup(id: "Clock") {
+      ClockView()
+    }
   }
 }

@@ -15,5 +15,12 @@ struct HelloWurstApp: App {
         .environment(model)
         .environment(preferences)
     }
+    
+#if os(visionOS)
+    WindowGroup(id: "Clock") {
+      ClockView()
+    }
+    .windowStyle(.volumetric)
+#endif
   }
 }

@@ -14,9 +14,21 @@
         
         @Steps {
             @Step {
-                <#text#>
+                HelloWurstApp
                 
-                @Code(name: "<#display name#>", file: <#filename.swift#>)
+                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-01-01.swift)
+            }
+            
+            @Step {
+                HelloWurstApp
+                
+                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-01-02.swift)
+            }
+
+            @Step {
+                HelloWurstApp
+                
+                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-01-03.swift)
             }
         }
     }
