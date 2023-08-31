@@ -49,14 +49,3 @@ struct ServingsCounter: View {
     }
   }
 }
-
-#Preview {
-  NavigationStack {
-    ServingsCounter()
-      .environment(OnboardingFeatureModel())
-      .environment(Preferences())
-  }
-}
-
-
-

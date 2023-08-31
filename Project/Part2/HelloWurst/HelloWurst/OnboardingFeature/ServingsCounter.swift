@@ -3,7 +3,7 @@ import SwiftUI
 struct ServingsCounter: View {
   
   @Environment(OnboardingFeatureModel.self)
-  private var model
+  var model
   
   var body: some View {
     List {

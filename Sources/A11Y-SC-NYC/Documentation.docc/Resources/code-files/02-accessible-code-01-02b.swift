@@ -2,10 +2,10 @@ import SwiftUI
 
 struct DietSelector: View {
   
-  @Environment(OnboardingFeatureModel.self) 
+  @Environment(OnboardingFeatureModel.self)
   var model
   
-  @Environment(Preferences.self) 
+  @Environment(Preferences.self)
   var preferences
   
   var body: some View {
@@ -79,13 +79,5 @@ struct DietSelector: View {
         Button("Skip") { model.displayServingsCounter() }
       }
     }
-  }
-}
-
-#Preview {
-  NavigationStack {
-    DietSelector()
-      .environment(OnboardingFeatureModel())
-      .environment(Preferences())
   }
 }

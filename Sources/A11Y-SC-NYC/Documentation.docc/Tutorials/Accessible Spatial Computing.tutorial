@@ -1,0 +1,35 @@
+@Tutorial(time: 59) {
+    @Intro(title: "Accessible Spatial Computing") {
+      In the heart of the mountain
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+    }
+    
+    @Section(title: "Second pass") {
+        @ContentAndMedia {
+            <#text#>
+            
+            @Image(source: <#file#>, alt: "<#accessible description#>")
+        }
+        
+        @Steps {
+            @Step {
+                GoalsSelector
+                
+                @Code(name: "GoalsSelector.swift", file: 02-accessible-code-01-01.swift, previousFile: 02-accessible-code-01-00.swift)
+            }
+            
+            @Step {
+                DietSelector
+                
+                @Code(name: "DietSelector.swift", file: 02-accessible-code-01-02b.swift, previousFile: 02-accessible-code-01-02a.swift)
+            }
+            
+            @Step {
+                DietSelector
+                
+                @Code(name: "ServingsCounter.swift", file: 02-accessible-code-01-03b.swift, previousFile: 02-accessible-code-01-03a.swift)
+            }
+        }
+    }
+}

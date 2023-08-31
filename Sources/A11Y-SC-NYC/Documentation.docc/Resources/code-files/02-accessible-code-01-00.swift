@@ -23,21 +23,16 @@ struct GoalsSelector: View {
             },
             label: {
               Label(goal.rawValue, systemImage: goal.systemImage)
-                .accessibilityLabel(goal.rawValue + (isSelected ? ". selected" : ""))
             }
           )
           .tag(goal)
           .listItemTint(isSelected ? Color.primary : .accentColor)
           .listRowBackground(isSelected ? Color.accentColor : .clear )
-          .accessibilityAction(named: "Continue") {
-            model.displayDietSelector()
-          }
         }
       } header: {
         VStack {
           Spacer()
             .frame(width: .zero, height: 0)
-            .accessibilityLabel("Step 1 of 4")
           
           Text("What brings you to Hello Würst?")
             .font(.system(.title, design: .serif))
@@ -49,9 +44,6 @@ struct GoalsSelector: View {
         .foregroundStyle(.primary)
         .padding(.bottom, 30)
         .multilineTextAlignment(.center)
-        .accessibilityElement(children: .combine)
-        .accessibilityAddTraits(.isHeader)
-        .accessibilityHint("You can choose multiple goals from the list")
       }
     }
     .listStyle(.plain)
@@ -75,13 +67,5 @@ struct GoalsSelector: View {
         Button("Skip") { model.displayDietSelector() }
       }
     }
-  }
-}
-
-#Preview {
-  NavigationStack {
-    GoalsSelector()
-      .environment(OnboardingFeatureModel())
-      .environment(Preferences())
   }
 }

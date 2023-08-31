@@ -20,7 +20,7 @@
     
     @Image(source: accesible-spatial-computing, alt: "Accessible Spatial Computing banner made with the SFSymbols related to Vision Pro and Accessibility")
     
-    @TutorialReference(tutorial: "doc:Destinations")
+    @TutorialReference(tutorial: "doc:Accessible-Spatial-Computing")
   }
   
   @Resources {

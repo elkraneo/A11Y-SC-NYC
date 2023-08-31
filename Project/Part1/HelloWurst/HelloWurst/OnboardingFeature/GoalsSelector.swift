@@ -1,8 +1,12 @@
 import SwiftUI
 
 struct GoalsSelector: View {
-  @Environment(OnboardingFeatureModel.self) private var model
-  @Environment(Preferences.self) private var preferences
+  
+  @Environment(OnboardingFeatureModel.self) 
+  var model
+  
+  @Environment(Preferences.self)
+  var preferences
   
   var body: some View {
     List {

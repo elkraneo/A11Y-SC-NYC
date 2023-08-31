@@ -77,11 +77,3 @@ struct GoalsSelector: View {
     }
   }
 }
-
-#Preview {
-  NavigationStack {
-    GoalsSelector()
-      .environment(OnboardingFeatureModel())
-      .environment(Preferences())
-  }
-}
