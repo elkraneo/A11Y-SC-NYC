@@ -1,7 +1,10 @@
 import SwiftUI
 
 struct RecipeView: View {
-  @Environment(AppCoreFeatureModel.self) private var model
+  
+  @Environment(AppCoreFeatureModel.self)
+  var model
+  
   let recipe: Recipe
   
   var body: some View {
@@ -46,8 +49,6 @@ struct RecipeView: View {
           Color.clear
             .aspectRatio(contentMode: .fit)
             .background {
-              // This image is created with an explicit (accessibility) label.
-              // TODO: create image description
               Image(decorative: recipe.image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)

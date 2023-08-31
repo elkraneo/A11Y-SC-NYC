@@ -1,4 +1,4 @@
-@Tutorial(time: 30, projectFiles: "HelloWurst-S1.zip") {
+@Tutorial(time: 30, projectFiles: "HelloWurst-P1.zip") {
   @XcodeRequirement(title: "Xcode 15", destination: "https://developer.apple.com/download/applications/")
   
   @Intro(title: "Adopting visionOS") {

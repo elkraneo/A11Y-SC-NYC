@@ -1,7 +1,10 @@
 import SwiftUI
 
 struct RecipeView: View {
-  @Environment(AppCoreFeatureModel.self) private var model
+  
+  @Environment(AppCoreFeatureModel.self)
+  var model
+  
   let recipe: Recipe
   
   var body: some View {

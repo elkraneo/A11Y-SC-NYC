@@ -26,7 +26,7 @@
             }
             
             @Step {
-                DietSelector
+                ServingsCounter
                 
                 @Code(name: "ServingsCounter.swift", file: 02-accessible-code-01-03b.swift, previousFile: 02-accessible-code-01-03a.swift)
             }
@@ -73,6 +73,40 @@
             Summary
               
             @Code(name: "Summary.swift", file: 02-accessible-code-03-02b.swift, previousFile: 02-accessible-code-03-02a.swift)
+          }
+        }
+    }
+    
+    @Section(title: "Recipes") {
+        @ContentAndMedia {
+            Recipes
+            
+            @Image(source: ..., alt: "...")
+        }
+        
+        @Steps {
+          @Step {
+            RecipeView
+              
+            @Code(name: "RecipeView.swift", file: 02-accessible-code-04-01b.swift, previousFile: 02-accessible-code-04-01a.swift)
+          }
+          
+          @Step {
+            RecipeView
+              
+            @Code(name: "RecipeView.swift", file: 02-accessible-code-04-02.swift)
+          }
+          
+          @Step {
+            RecipeView
+              
+            @Code(name: "RecipeView.swift", file: 02-accessible-code-04-03.swift)
+          }
+          
+          @Step {
+            RecipeView
+              
+            @Code(name: "RecipeView.swift", file: 02-accessible-code-04-04.swift)
           }
         }
     }
