@@ -14,6 +14,14 @@
     
     @TutorialReference(tutorial: "doc:Adopting-visionOS")
   }
+
+  @Chapter(name: "Accessible Spatial Computing") {
+    From "it works and feels just like iPad" to "right at home on this device".
+    
+    @Image(source: accesible-spatial-computing, alt: "Choose your experience table from the WWDC23 session screenshot")
+    
+    @TutorialReference(tutorial: "doc:Destinations")
+  }
   
   @Resources {
     Explore more resources for learning about Spatial Computing.
