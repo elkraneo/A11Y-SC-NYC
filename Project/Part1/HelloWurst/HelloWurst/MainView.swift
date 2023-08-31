@@ -23,6 +23,6 @@ struct MainView: View {
 
 #Preview {
   MainView()
-    .environment(AppCoreFeatureModel(recipes: Recipe.mock))
+    .environment(AppCoreFeatureModel(recipes: Recipe.samples))
     .environment(Preferences())
 }

@@ -28,7 +28,7 @@ struct ContentView: View {
     .environment(
       AppCoreFeatureModel(
         destination: .main,
-        recipes: Recipe.mock)
+        recipes: Recipe.samples)
     )
     .environment(Preferences())
     .previewDisplayName("Main")

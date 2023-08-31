@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		407220E42A936C11009BB134 /* StepByStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407220E32A936C11009BB134 /* StepByStepView.swift */; };
-		407220E82A93BD30009BB134 /* Recipe+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407220E72A93BD30009BB134 /* Recipe+Mock.swift */; };
+		407220E82A93BD30009BB134 /* Recipe+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407220E72A93BD30009BB134 /* Recipe+Samples.swift */; };
 		407EAD2C2A9D1DC0007C46AA /* ServingsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407EAD2B2A9D1DC0007C46AA /* ServingsPicker.swift */; };
 		40B512272A9E510F00DC4BBB /* Wall_Kitchen_Clock_50s.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 40B512262A9E510F00DC4BBB /* Wall_Kitchen_Clock_50s.usdz */; };
 		40B5124A2A9E51A900DC4BBB /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B512492A9E51A900DC4BBB /* ClockView.swift */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		407220E32A936C11009BB134 /* StepByStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepView.swift; sourceTree = "<group>"; };
-		407220E72A93BD30009BB134 /* Recipe+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Mock.swift"; sourceTree = "<group>"; };
+		407220E72A93BD30009BB134 /* Recipe+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Samples.swift"; sourceTree = "<group>"; };
 		407EAD2B2A9D1DC0007C46AA /* ServingsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServingsPicker.swift; sourceTree = "<group>"; };
 		40B512262A9E510F00DC4BBB /* Wall_Kitchen_Clock_50s.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Wall_Kitchen_Clock_50s.usdz; sourceTree = "<group>"; };
 		40B512492A9E51A900DC4BBB /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 				40BB48392A87E6EB008422AE /* Goal.swift */,
 				40BB48832A8A6C23008422AE /* Preferences.swift */,
 				40BB48882A8A8FBA008422AE /* Recipe.swift */,
-				407220E72A93BD30009BB134 /* Recipe+Mock.swift */,
+				407220E72A93BD30009BB134 /* Recipe+Samples.swift */,
 			);
 			path = SharedModels;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 				40E752292A8669EA0040E74F /* OnboardingView.swift in Sources */,
 				407220E42A936C11009BB134 /* StepByStepView.swift in Sources */,
 				40E7521C2A8667990040E74F /* ContentView.swift in Sources */,
-				407220E82A93BD30009BB134 /* Recipe+Mock.swift in Sources */,
+				407220E82A93BD30009BB134 /* Recipe+Samples.swift in Sources */,
 				40BB48892A8A8FBA008422AE /* Recipe.swift in Sources */,
 				40D4D81D2A9A1E0300E38ABD /* OnboardingStepView.swift in Sources */,
 				40D4D81F2A9A20DF00E38ABD /* PresentationView.swift in Sources */,

@@ -256,7 +256,7 @@ struct IngredientsView: View {
 
 #Preview {
   NavigationStack {
-    RecipeView(recipe: Recipe.mock[0])
+    RecipeView(recipe: Recipe.samples[0])
   }
   .environment(AppCoreFeatureModel())
   .environment(Preferences())
@@ -264,7 +264,7 @@ struct IngredientsView: View {
 
 #Preview {
   NavigationStack {
-    RecipeView(recipe: Recipe.mock[1])
+    RecipeView(recipe: Recipe.samples[1])
   }
   .environment(AppCoreFeatureModel())
   .environment(Preferences())
@@ -272,7 +272,7 @@ struct IngredientsView: View {
 
 #Preview {
   NavigationStack {
-    RecipeView(recipe: Recipe.mock[2])
+    RecipeView(recipe: Recipe.samples[2])
   }
   .environment(AppCoreFeatureModel())
   .environment(Preferences())
@@ -280,7 +280,7 @@ struct IngredientsView: View {
 
 #Preview {
   NavigationView {
-    RecipeView(recipe: Recipe.mock[3])
+    RecipeView(recipe: Recipe.samples[3])
   }
   .environment(AppCoreFeatureModel())
   .environment(Preferences())
@@ -290,7 +290,7 @@ struct IngredientsView: View {
   NavigationStack {
     List {
       Section {
-        NutritionFactsView(recipe: Recipe.mock[3])
+        NutritionFactsView(recipe: Recipe.samples[3])
       }
     }
   }

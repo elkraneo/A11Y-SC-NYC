@@ -37,6 +37,6 @@ struct StepByStepView: View {
 #Preview {
   NavigationStack {
     StepByStepView()
-      .environment(StepByStepFeatureModel(steps: Recipe.mock[0].steps))
+      .environment(StepByStepFeatureModel(steps: Recipe.samples[0].steps))
   }
 }

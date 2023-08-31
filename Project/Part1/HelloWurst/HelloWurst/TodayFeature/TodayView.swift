@@ -99,7 +99,7 @@ struct Summary: View {
 #Preview {
   NavigationStack {
     TodayView()
-      .environment(AppCoreFeatureModel(recipes: Recipe.mock))
+      .environment(AppCoreFeatureModel(recipes: Recipe.samples))
       .environment(Preferences())
   }
 }

@@ -5,7 +5,7 @@
         @Image(source: <#file#>, alt: "<#accessible description#>")
     }
     
-    @Section(title: "<#text#>") {
+    @Section(title: "Reality") {
         @ContentAndMedia {
             <#text#>
             
@@ -13,12 +13,6 @@
         }
         
         @Steps {
-            @Step {
-                <#text#>
-                
-                @Image(source: <#file#>, alt: "<#accessible description#>")
-            }
-            
             @Step {
                 <#text#>
                 

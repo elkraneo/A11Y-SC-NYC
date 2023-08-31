@@ -1,7 +1,7 @@
 import Foundation
 
 extension Recipe {
-  static var mock = [
+  static var samples = [
     Recipe(
       name: "Die einzig wahre Currywurst",
       diet: .everything,
