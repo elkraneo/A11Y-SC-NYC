@@ -8,8 +8,8 @@
       location = "group:Project"
       name = "Project">
       <Group
-         location = "group:Season1"
-         name = "Season 1">
+         location = "group:Part1"
+         name = "Part 1">
          <Group
             location = "group:HelloWurst"
             name = "HelloWurst">
@@ -311,8 +311,8 @@
          </Group>
       </Group>
       <Group
-         location = "group:Season2"
-         name = "Season 2">
+         location = "group:Part2"
+         name = "Part 2">
          <Group
             location = "group:HelloWurst"
             name = "HelloWurst">

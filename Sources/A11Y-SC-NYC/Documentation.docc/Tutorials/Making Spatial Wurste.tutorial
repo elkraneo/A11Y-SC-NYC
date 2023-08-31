@@ -16,9 +16,9 @@
   }
 
   @Chapter(name: "Accessible Spatial Computing") {
-    From "it works and feels just like iPad" to "right at home on this device".
+    Everything Everywhere All at Once
     
-    @Image(source: accesible-spatial-computing, alt: "Choose your experience table from the WWDC23 session screenshot")
+    @Image(source: accesible-spatial-computing, alt: "Accessible Spatial Computing banner made with the SFSymbols related to Vision Pro and Accessibility")
     
     @TutorialReference(tutorial: "doc:Destinations")
   }
