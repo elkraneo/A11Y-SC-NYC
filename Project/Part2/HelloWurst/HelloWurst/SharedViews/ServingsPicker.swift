@@ -2,10 +2,10 @@ import SwiftUI
 
 struct ServingsPicker: View {
   
-  var size: CGFloat = 100
-
   @Environment(Preferences.self)
-  private var preferences
+  var preferences
+
+  var size: CGFloat = 100
   
   var body: some View {
     @Bindable

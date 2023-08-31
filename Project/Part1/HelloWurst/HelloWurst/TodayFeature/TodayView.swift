@@ -46,8 +46,13 @@ struct TodayView: View {
 }
 
 struct Summary: View {
-  @Environment(Preferences.self) private var preferences
-  @Environment(\.locale) private var locale
+  
+  @Environment(Preferences.self) 
+  var preferences
+  
+  @Environment(\.locale) 
+  var locale
+  
   let recipe: Recipe
   
   var body: some View {

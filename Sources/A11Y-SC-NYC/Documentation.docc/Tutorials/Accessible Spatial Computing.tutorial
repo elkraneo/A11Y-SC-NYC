@@ -43,15 +43,37 @@
         @ContentAndMedia {
             <#text#>
             
-            @Image(source: <#file#>, alt: "<#accessible description#>")
+            @Image(source: custom-picker, alt: "Customized picker component on visionOS preview")
         }
         
         @Steps {
-            @Step {
-                GoalsSelector
-                
-                @Code(name: "GoalsSelector.swift", file: 02-accessible-code-01-01.swift, previousFile: 02-accessible-code-01-00.swift)
-            }
+          @Step {
+            ServingsPicker
+              
+            @Code(name: "ServingsPicker.swift", file: 02-accessible-code-02-01b.swift, previousFile: 02-accessible-code-02-01a.swift)
+          }
+        }
+    }
+    
+    @Section(title: "Today improvements") {
+        @ContentAndMedia {
+          TodayView
+            
+            @Image(source: ..., alt: "...")
+        }
+        
+        @Steps {
+          @Step {
+            TodayView
+              
+            @Code(name: "TodayView.swift", file: 02-accessible-code-03-01b.swift, previousFile: 02-accessible-code-03-01a.swift)
+          }
+          
+          @Step {
+            Summary
+              
+            @Code(name: "Summary.swift", file: 02-accessible-code-03-02b.swift, previousFile: 02-accessible-code-03-02a.swift)
+          }
         }
     }
 
