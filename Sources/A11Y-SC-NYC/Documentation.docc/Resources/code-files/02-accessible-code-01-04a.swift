@@ -21,7 +21,6 @@ struct AlmostThere: View {
               .bold()
               .multilineTextAlignment(.center)
               .animation(.default, value: model.isReady)
-              .accessibilityAddTraits(.updatesFrequently)
           }
           
           Spacer()
@@ -49,41 +48,28 @@ struct AlmostThere: View {
                 .animation(.easeInOut, value: progress)
                 .offset(y: isThirdStepCompleted ? -5 : 0)
             }
-            .accessibilityHidden(true)
             .padding(.top)
+            .accessibilityHidden(true)
           }
         }
         .listRowSeparator(.hidden)
       } header: {
-        VStack {
-          Spacer()
-            .frame(width: .zero, height: 0)
-            .accessibilityLabel(
-              """
-              "Step 4 of 4"
-              - Finding recipes for your diet
-              - Sorting out ingredients you don't eat
-              - Personalizing your recipes
-              """
-            )
-          
-          Image(decorative: "wursthain")
-            .resizable()
-            .scaledToFit()
-            .clipShape(Circle())
-            .shadow(radius: 5)
-            .overlay {
-              withAnimation {
-                Circle()
-                  .trim(from: 0.0, to: progress)
-                  .stroke(style: StrokeStyle(lineWidth: 16.0, lineCap: .round, lineJoin: .round))
-                  .foregroundColor(.accentColor)
-                  .rotationEffect(Angle(degrees: 270.0))
-                  .animation(.easeInOut, value: progress)
-              }
+        Image(decorative: "wursthain")
+          .resizable()
+          .scaledToFit()
+          .clipShape(Circle())
+          .shadow(radius: 5)
+          .overlay {
+            withAnimation {
+              Circle()
+                .trim(from: 0.0, to: progress)
+                .stroke(style: StrokeStyle(lineWidth: 16.0, lineCap: .round, lineJoin: .round))
+                .foregroundColor(.accentColor)
+                .rotationEffect(Angle(degrees: 270.0))
+                .animation(.easeInOut, value: progress)
             }
-        }
-        .padding()
+          }
+          .padding()
       }
     }
     .listStyle(.plain)
@@ -101,10 +87,6 @@ struct AlmostThere: View {
         .controlSize(.large)
         .padding()
         .disabled(!model.isReady)
-        .accessibilityAddTraits(.updatesFrequently)
-        .accessibilityValue(isReadyButtonFocused ? ". Process completed" : "Still processing.")
-        .accessibilityHint(model.isReady ? "Complete the onboarding process and browse today's recipes tailored to you." : "")
-        .accessibilityFocused($isReadyButtonFocused)
       }
     }
     .task {
@@ -117,12 +99,5 @@ struct AlmostThere: View {
         }
       }
     }
-  }
-}
-
-#Preview {
-  NavigationStack {
-    AlmostThere()
-      .environment(OnboardingFeatureModel())
   }
 }

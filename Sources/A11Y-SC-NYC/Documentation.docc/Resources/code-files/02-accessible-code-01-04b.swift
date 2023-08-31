@@ -51,6 +51,7 @@ struct AlmostThere: View {
             }
             .accessibilityHidden(true)
             .padding(.top)
+            .accessibilityHidden(true)
           }
         }
         .listRowSeparator(.hidden)
@@ -67,23 +68,23 @@ struct AlmostThere: View {
               """
             )
           
-          Image(decorative: "wursthain")
-            .resizable()
-            .scaledToFit()
-            .clipShape(Circle())
-            .shadow(radius: 5)
-            .overlay {
-              withAnimation {
-                Circle()
-                  .trim(from: 0.0, to: progress)
-                  .stroke(style: StrokeStyle(lineWidth: 16.0, lineCap: .round, lineJoin: .round))
-                  .foregroundColor(.accentColor)
-                  .rotationEffect(Angle(degrees: 270.0))
-                  .animation(.easeInOut, value: progress)
+        Image(decorative: "wursthain")
+          .resizable()
+          .scaledToFit()
+          .clipShape(Circle())
+          .shadow(radius: 5)
+          .overlay {
+            withAnimation {
+              Circle()
+                .trim(from: 0.0, to: progress)
+                .stroke(style: StrokeStyle(lineWidth: 16.0, lineCap: .round, lineJoin: .round))
+                .foregroundColor(.accentColor)
+                .rotationEffect(Angle(degrees: 270.0))
+                .animation(.easeInOut, value: progress)
               }
             }
-        }
-        .padding()
+          }
+          .padding()
       }
     }
     .listStyle(.plain)
@@ -117,12 +118,5 @@ struct AlmostThere: View {
         }
       }
     }
-  }
-}
-
-#Preview {
-  NavigationStack {
-    AlmostThere()
-      .environment(OnboardingFeatureModel())
   }
 }

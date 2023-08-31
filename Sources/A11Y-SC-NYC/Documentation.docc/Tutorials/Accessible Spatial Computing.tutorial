@@ -30,6 +30,29 @@
                 
                 @Code(name: "ServingsCounter.swift", file: 02-accessible-code-01-03b.swift, previousFile: 02-accessible-code-01-03a.swift)
             }
+            
+            @Step {
+                AlmostThere
+                
+                @Code(name: "AlmostThere.swift", file: 02-accessible-code-01-04b.swift, previousFile: 02-accessible-code-01-04a.swift)
+            }
         }
     }
+    
+    @Section(title: "The fascinating story of a custom picker") {
+        @ContentAndMedia {
+            <#text#>
+            
+            @Image(source: <#file#>, alt: "<#accessible description#>")
+        }
+        
+        @Steps {
+            @Step {
+                GoalsSelector
+                
+                @Code(name: "GoalsSelector.swift", file: 02-accessible-code-01-01.swift, previousFile: 02-accessible-code-01-00.swift)
+            }
+        }
+    }
+
 }
