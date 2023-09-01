@@ -1,26 +1,10 @@
 import SwiftUI
+import RealityKit
 
-@main
-struct HelloWurstApp: App {
-  
-  @State private
-  var model = AppCoreFeatureModel(recipes: Recipe.samples)
-  
-  @State private
-  var preferences = Preferences()
-  
-  var body: some Scene {
-    WindowGroup {
-      ContentView()
-        .environment(model)
-        .environment(preferences)
-    }
-    
 #if os(visionOS)
-    WindowGroup(id: "Clock") {
-      ClockView()
-    }
-    .windowStyle(.volumetric)
-#endif
+struct ClockView: View {
+  var body: some View {
+    Model3D(named: "Wall_Kitchen_Clock_50s")
   }
 }
+#endif

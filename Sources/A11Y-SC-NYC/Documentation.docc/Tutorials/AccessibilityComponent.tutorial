@@ -1,11 +1,58 @@
-@Tutorial(time: 30) {
+@Tutorial(time: 30, projectFiles: "Wall_Kitchen_Clock_50s.usdz") {
     @Intro(title: "AccessibilityComponent") {
         <#text#>
         
         @Image(source: <#file#>, alt: "<#accessible description#>")
     }
     
-    @Section(title: "Reality") {
+    @Section(title: "ClockView") {
+        @ContentAndMedia {
+            SwiftUI view displaying a 3D model
+            
+            @Image(source: <#file#>, alt: "<#accessible description#>")
+        }
+        
+        @Steps {
+            @Step {
+                Create view
+                
+                `HelloWurst/StepByStepFeature/ClockView.swift`
+                
+                @Code(name: "ClockView.swift", file: 03-accessibility-component-01-01.swift, previousFile: 03-accessibility-component-01-00.swift)
+            }
+            
+            @Step {
+                Use [Model3D](https://developer.apple.com/documentation/realitykit/model3d/) to display the provided `.usdz`
+
+                @Code(name: "ClockView.swift", file: 03-accessibility-component-01-02.swift)
+            }
+            
+            @Step {                
+                > Warning: `Model3D` is only available in `visionOS 1.0+`, so take care not to break the iOS target
+                
+                @Code(name: "ClockView.swift", file: 03-accessibility-component-01-03.swift)
+            }
+            
+            @Step {
+              Preview
+              
+              @Code(name: "ClockView.swift", file: 03-accessibility-component-01-04.swift) {
+                @Image(source: "clock-preview-1", alt: "...")
+              }
+            }
+            
+            @Step {
+              Adjust
+              
+              @Code(name: "ClockView.swift", file: 03-accessibility-component-01-05.swift) {
+                @Image(source: "clock-preview-2", alt: "...")
+              }
+            }
+            
+        }
+    }
+    
+    @Section(title: "Window") {
         @ContentAndMedia {
             <#text#>
             
@@ -16,19 +63,35 @@
             @Step {
                 HelloWurstApp
                 
-                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-01-01.swift)
+                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-02-01.swift)
             }
             
             @Step {
                 HelloWurstApp
                 
-                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-01-02.swift)
+                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-02-02.swift)
             }
 
             @Step {
                 HelloWurstApp
                 
-                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-01-03.swift)
+                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-02-03.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Reality") {
+        @ContentAndMedia {
+            text
+            
+            @Image(source: <#file#>, alt: "<#accessible description#>")
+        }
+        
+        @Steps {
+            @Step {
+                HelloWurstApp
+                
+                @Code(name: "HelloWurstApp.swift", file: 03-accessibility-component-01-01.swift)
             }
         }
     }
