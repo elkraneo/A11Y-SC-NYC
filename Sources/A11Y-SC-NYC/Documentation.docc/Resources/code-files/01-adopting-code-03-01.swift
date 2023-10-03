@@ -15,10 +15,12 @@ struct TodayView: View {
         visibility: model.isOnboadingPresented ? .hidden : .visible,
         attachmentAnchor: .scene(.bottom)
       ) {
-        Summary(recipe: recipe)
-          .padding()
-          .glassBackgroundEffect()
-          .accessibilityHidden(true)
+        if let recipe = model.recipes.first(where: { $0.id == scrolledRecipe }) {
+          Summary(recipe: recipe)
+            .padding()
+            .glassBackgroundEffect()
+            .accessibilityHidden(true)
+        }
       }
 #endif
     }
